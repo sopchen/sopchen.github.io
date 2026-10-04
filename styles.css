@@ -317,6 +317,26 @@ a:focus-visible {
   font-weight: 500;
 }
 
+.project-figure {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.project-figure img {
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.project-figure figcaption {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
 /* Leadership */
 
 .leader + .leader {
