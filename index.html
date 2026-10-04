@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sophia Chen</title>
+  <meta name="description" content="Sophia Chen is a Computer Science student at Rice University and a Computer Engineering Intern at NASA Armstrong Flight Research Center.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero" id="home">
+    <img class="hero-photo" src="images/sophia.jpg" alt="Portrait of Sophia Chen in front of the United States and NASA flags">
+    <div class="hero-panel">
+      <nav class="hero-nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="hero-text">
+        <h1>Hello, I am Sophia!</h1>
+        <p>Computer Science student at Rice University</p>
+        <a class="button button-light" href="#about">Discover more</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <dl class="info-list">
+            <div><dt>Name:</dt><dd>Sophia Chen</dd></div>
+            <div><dt>Pronouns:</dt><dd>She/Her/Hers</dd></div>
+            <div><dt>School:</dt><dd>Rice University</dd></div>
+            <div><dt>Age:</dt><dd>18 Years</dd></div>
+            <div><dt>Hometown:</dt><dd>San Jose, California</dd></div>
+          </dl>
+          <ul class="social">
+            <li><a href="https://www.linkedin.com/in/sophiaschen88/" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="Sophia on LinkedIn" width="30" height="30"></a></li>
+            <li><a href="https://github.com/sopchen" target="_blank" rel="noopener"><img src="images/github.svg" alt="Sophia on GitHub" width="30" height="30"></a></li>
+          </ul>
+        </div>
+
+        <div class="about-text">
+          <p>Hi! I’m Sophia, a sophomore at Rice University majoring in Computer Science and minoring in Data Science. I’ve been programming since my sophomore year of high school and am comfortable working with Python, including pandas and NumPy, as well as Java and PostgreSQL. I also have experience working with Arduino and soldering circuit boards.</p>
+          <p>Currently, I’m a Computer Engineering Intern at NASA Armstrong Flight Research Center, where I create test cases and test a radar application. I’m also developing a search microservice using Elasticsearch to implement semantic search.</p>
+          <p>During the school year, I’m part of Professor Treangen’s computational genomics lab, Genome Sleuths. There, I worked on using a machine learning Variational Autoencoder (VAE) model to identify potential primers for Polymerase Chain Reaction (PCR).</p>
+          <p>Outside of school and work, I love spending time with my two cats, baking, rock climbing, and playing badminton.</p>
+          <a class="button button-outline" href="Sophia_Chen_Resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="education">
+      <div class="container">
+        <h2>My Education</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-card">
+              <h3>Rice University</h3>
+              <p class="meta">Bachelors Degree <span>|</span> 2025-Present</p>
+              <p><b>Major:</b> Computer Science</p>
+              <p><b>Minor:</b> Data Science</p>
+              <p><b>GPA:</b> 3.92/4.0</p>
+              <p><b>Relevant coursework:</b> Algorithmic Thinking, Data Science Tools &amp; Models (PostgreSQL, NumPy/Pandas/SKLearn, Spark), Computational Thinking (Python), Statistics for Data Science (R), Prompt Engineering, Economics, Multivariable Calculus, Linear Algebra</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <h3>Lynbrook High School</h3>
+              <p class="meta">2021-2025</p>
+              <p><b>GPA:</b> 4.0/4.0 (Unweighted)</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <h2>My Experience</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-card">
+              <h3>NASA Armstrong Flight Research Center</h3>
+              <p class="meta">Computer Engineering Intern <span>|</span> Edwards, CA <span>|</span> August 2026 - December 2026</p>
+              <ul class="bullets">
+                <li>Develop a search microservice in Java/Spring Boot with Elasticsearch to implement semantic (natural language) vector retrieval over engineering report archives.</li>
+                <li>Generate synthesized summaries of top search results using an LLM-driven RAG pipeline with Spring AI.</li>
+                <li>Plan and execute hardware-in-the-loop HIL/SIL testing at NASA sites within Edwards Air Force Base.</li>
+                <li>Support Range Operations, Range Engineering, and mission control room execution to ensure manned aircraft airworthiness and completion of in-flight experiments.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <h3>Treangen Lab, Rice University</h3>
+              <p class="meta">Research Assistant <span>|</span> Houston, TX <span>|</span> May 2026 - July 2026</p>
+              <p class="meta">Undergraduate Researcher (part-time) <span>|</span> Houston, TX <span>|</span> September 2025 - May 2026</p>
+              <ul class="bullets">
+                <li>Worked on a computational genomics workflow to classify microbiome samples using a variational autoencoder (Python, Scikit-Learn) trained on next-generation long-read sequencing data.</li>
+                <li>Deployed and managed jobs on Rice’s high-performance computing (HPC) clusters (RAPID and NOTS).</li>
+                <li>Used AI agents to code/debug (Python) and validate novel LLM-based approach for genome variant sequencing (multiplex PCR tiling).</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-note">Click on any project to learn more</p>
+        <div class="projects">
+
+          <a class="project" href="https://devpost.com/software/medimetrics" target="_blank" rel="noopener">
+            <svg class="project-icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="6" width="36" height="36" rx="3"/>
+              <path d="M24 15v18M15 24h18"/>
+            </svg>
+            <h3>MediMetrics</h3>
+            <p>Built for HackRice 2025. Applied OpenCV and MediaPipe (ML) for medical landmark measurement for Electronic Health Records. Our hackathon submission included a full-stack FastAPI imaging backend (Ngrok localhost), React frontend on Vercel and Firebase authentication/storage.</p>
+            <ul class="skills">
+              <li>OpenCV</li>
+              <li>MediaPipe</li>
+              <li>FastAPI</li>
+              <li>Vercel</li>
+              <li>Firebase</li>
+            </ul>
+          </a>
+
+          <a class="project" href="https://github.com/avaa8678/coilgun" target="_blank" rel="noopener">
+            <svg class="project-icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 8v16a14 14 0 0 0 28 0V8h-9v16a5 5 0 0 1-10 0V8z"/>
+              <path d="M10 16h9M29 16h9"/>
+            </svg>
+            <h3>Electromagnetic Launcher</h3>
+            <p>Developed new coilgun design (2023-24) with Arduinos, gyro sensors, H-bridge and electromagnets to improve coilgun efficiency. Won 2024 regional and 4th in EE at state.</p>
+            <ul class="skills">
+              <li>3D printing</li>
+              <li>Soldering/wiring</li>
+              <li>Arduino</li>
+            </ul>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="leadership">
+      <div class="container">
+        <h2>My Leadership</h2>
+
+        <article class="leader">
+          <div class="leader-text">
+            <h3>HackRice Organizing Team</h3>
+            <p class="meta">Rice University, Houston, TX <span>|</span> January 2026 - September 2026</p>
+            <ul class="bullets">
+              <li>Organize workshops, welcome activities, and competition logistics for worldwide teams at Rice hackathons.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="leader">
+          <div class="leader-text">
+            <h3>Lynbrook FIRST Robotics</h3>
+            <p class="meta">San Jose, CA <span>|</span> September 2021 - May 2025</p>
+            <ul class="bullets">
+              <li><b>Vice President of Robot Design &amp; Build (2024-25):</b> Led robot design and integration, HW/SW/EE for 50+ team.</li>
+              <li><b>Overall Design Lead (2023-24):</b> Trained team in Autodesk tools and Lynbrook Design Methodology.</li>
+              <li><b>Subsystem Lead - Drive train (2022-23), Shooter/Intake (2023-24), End Effector (2024-25):</b> Design/CAD/CAM/test.</li>
+            </ul>
+          </div>
+          <div class="robots">
+            <figure>
+              <img src="images/robot-drivetrain.jpg" alt="CAD render of a yellow swerve drive train frame with four wheel modules" loading="lazy">
+              <figcaption>Drive train</figcaption>
+            </figure>
+            <figure>
+              <img src="images/robot-shooter-intake.jpg" alt="CAD render of a yellow shooter and intake with green flywheels and grey rollers" loading="lazy">
+              <figcaption>Shooter/Intake</figcaption>
+            </figure>
+            <figure>
+              <img src="images/robot-end-effector.jpg" alt="CAD render of a yellow and grey end effector arm with four wheels" loading="lazy">
+              <figcaption>End Effector</figcaption>
+            </figure>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section section-tint" id="contact">
+      <div class="container">
+        <h2>Get in touch</h2>
+        <p class="section-note">If you want to contact me, fill out the following form and I will do my best to get back to you as soon as I can!</p>
+        <form class="contact-form" action="https://formsubmit.co/schen3305@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from sopchen.github.io">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://sopchen.github.io/#contact">
+          <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field-row">
+            <label>Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+          </div>
+          <label>Subject
+            <input type="text" name="subject">
+          </label>
+          <label>Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="button button-dark" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <ul class="social social-footer">
+      <li><a href="https://www.linkedin.com/in/sophiaschen88/" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="Sophia on LinkedIn" width="26" height="26"></a></li>
+      <li><a href="https://github.com/sopchen" target="_blank" rel="noopener"><img src="images/github.svg" alt="Sophia on GitHub" width="26" height="26"></a></li>
+    </ul>
+    <p>Copyright © 2026 Sophia Chen</p>
+  </footer>
+
+</body>
+</html>
