@@ -108,7 +108,14 @@ button:focus-visible {
 
 /* Hero */
 
-.hero { padding: clamp(48px, 8vw, 120px) 0 clamp(64px, 9vw, 136px); }
+.hero {
+  padding: clamp(48px, 8vw, 120px) 0 clamp(64px, 9vw, 136px);
+  overflow: hidden;
+}
+
+/* Moved by the scroll script in index.html */
+.hero-text,
+.hero-portrait img { will-change: transform, opacity; }
 
 .hero-grid {
   display: grid;

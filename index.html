@@ -282,5 +282,37 @@
     <p>Copyright © 2026 Sophia Chen</p>
   </footer>
 
+  <script>
+    // As the page scrolls, the greeting and portrait drift down slower than the page and fade out.
+    (function () {
+      var hero = document.querySelector('.hero');
+      var text = document.querySelector('.hero-text');
+      var photo = document.querySelector('.hero-portrait img');
+      if (!hero || !text || !photo) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      var ticking = false;
+
+      function update() {
+        ticking = false;
+        var height = hero.offsetHeight;
+        var progress = Math.min(Math.max(window.scrollY / height, 0), 1);
+        text.style.transform = 'translateY(' + (progress * height * 0.35) + 'px)';
+        text.style.opacity = Math.max(1 - progress * 1.5, 0);
+        photo.style.transform = 'translateY(' + (progress * height * 0.16) + 'px) scale(' + (1 + progress * 0.05) + ')';
+        photo.style.opacity = Math.max(1 - progress * 1.1, 0);
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(update);
+        }
+      }, { passive: true });
+
+      update();
+    })();
+  </script>
+
 </body>
 </html>
